@@ -221,7 +221,7 @@
 include('session.php');
 ?>
 <?php
- $db = mysql_connect("localhost", "root", "");
+ $db = mysql_connect("localhost", "root", "root");
  mysql_select_db("college",$db);
  $result = mysql_query("SELECT * FROM result where username='$user_check'",$db);
   echo "<TABLE BORDER=2>";
