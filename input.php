@@ -1,7 +1,7 @@
 <?php
 
 $user_name="root";
-$password="";
+$password="root";
 $server="localhost";
 
 $id=$_POST['id'];
@@ -10,7 +10,7 @@ $name=$_POST['name'];
 $age=$_POST['age'];
 mysql_connect($server,$user_name,$password) or die(mysql_error());
 
-mysql_select_db("foruser");
+mysql_select_db("college");
 
 
 $query= "INSERT INTO loginlogout(id,name,age) VALUES ('$id','$name','$age')";

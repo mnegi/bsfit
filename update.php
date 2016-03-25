@@ -8,7 +8,7 @@
       <?php
          if(isset($_POST['update'])) {
             $dbuser = 'root';
-            $dbpassword = ''";
+            $dbpassword = 'root';
             
             $conn = mysql_connect($dbhost, $dbuser, $dbpassword);
             
@@ -25,7 +25,7 @@
             
             $sql = "UPDATE cse ". "SET SEMESTER 1  = $SEMESTER 1 ". 
                "WHERE SAMESTER1 = $SEMESTER1" ;
-            mysql_select_db('computer_science');
+            mysql_select_db('college');
             $retval = mysql_query( $sql, $connECTION );
             
             if(! $retval ) {

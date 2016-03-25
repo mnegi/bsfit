@@ -35,8 +35,8 @@
  </div>
 <br><br><br><br><br><br><br>
 <?php
-$db=mysql_connect("localhost",  "root",   "");
-mysql_select_db("computer_science" ,$db);
+$db=mysql_connect("localhost",  "root",   "root");
+mysql_select_db("college" ,$db);
 $result = mysql_query("select * from ece",$db);
 echo "<TABLE BORDER=2>";
 echo "<TR><TD><B>SEMESTER 1</B><TD><B>SEMESTER 2</B><TD><B>SEMESTER 3</B><TD><B>SEMESTER 4</B><TD><B>SEMESTER 5</B><TD><B>SEMESTER 6</B></TR>";

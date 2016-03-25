@@ -11,14 +11,14 @@ else
 $username=$_POST['username'];
 $password=$_POST['password'];
 // Establishing Connection with Server by passing server_name, user_id and password as a parameter
-$connection = mysql_connect("localhost", "root", "");
+$connection = mysql_connect("localhost", "root", "root");
 // To protect MySQL injection for Security purpose
 $username = stripslashes($username);
 $password = stripslashes($password);
 $username = mysql_real_escape_string($username);
 $password = mysql_real_escape_string($password);
 // Selecting Database
-$db = mysql_select_db("foruser", $connection);
+$db = mysql_select_db("college", $connection);
 // SQL query to fetch information of registerd users and finds user match.
 $query = mysql_query("select * from loginlogout where password='$password' AND username='$username'", $connection);
 $rows = mysql_num_rows($query);

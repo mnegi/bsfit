@@ -67,8 +67,8 @@ AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/
 
 		  </div>
 			<?php
-$db=mysql_connect("localhost",  "root",   "");
-mysql_select_db("computer_science" ,$db);
+$db=mysql_connect("localhost",  "root",   "root");
+mysql_select_db("college" ,$db);
 $result = mysql_query("select * from cp",$db);
 echo "<TABLE BORDER=2>";
 echo "<TR><TD><B>semester1</B><TD><B>semester 2</B><TD><B>semester 3</B><TD><B>semester 4</B><TD><B>semester 5</B><TD><B>semester 6</B></TR>";
