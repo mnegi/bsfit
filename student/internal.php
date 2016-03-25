@@ -144,7 +144,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="Syllabus.html">
+										<a href="syllabus.html">
 											<span class="pull-right label label-primary"></span>
 											<i class="fa fa-envelope" aria-hidden="true"></i>
 											<span>Syllabus</span>
@@ -221,7 +221,7 @@ include('session.php');
 ?>
 
 <?php
- $db = mysql_connect("localhost", "root", "root");
+ $db = mysql_connect("localhost", "root", "");
  mysql_select_db("college",$db);
  $result = mysql_query("SELECT * FROM internal where username='$user_check'",$db);
   echo "<TABLE BORDER=2>";

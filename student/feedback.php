@@ -144,7 +144,7 @@
 										</a>
 									</li>
 									<li>
-										<a href="Syllabus.html">
+										<a href="syllabus.html">
 											<span class="pull-right label label-primary"></span>
 											<i class="fa fa-envelope" aria-hidden="true"></i>
 											<span>Syllabus</span>
