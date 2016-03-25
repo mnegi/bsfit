@@ -220,7 +220,7 @@
 <?php
 
 $user_name="root";
-$pass="";
+$pass="root";
 $server="localhost";
 
 
