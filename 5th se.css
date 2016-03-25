@@ -1,0 +1,13 @@
+th {
+    font-weight: bold;
+}
+user agent stylesheettd, th {
+    display: table-cell;
+    vertical-align: inherit;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 20px;
+    border-color: #800000;
+}
